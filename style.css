@@ -73,6 +73,7 @@ body {
             background: deeppink;
             color: deeppink;
             text-decoration: none;
+            /*border: 100px 100px 100px 100px solid deeppink;*/
         }
 
         div.content {
