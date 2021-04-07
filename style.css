@@ -1,11 +1,10 @@
 body {
             margin: 0;
-            font-family: "Arboria";
+            font-family: Arboria, sans-serif;
         }
 
         .sidebar {
             margin: 0;
-            margin-top: 0px;
             padding: 0;
             width: 200px;
             background-color: #FFFFFF;
@@ -34,12 +33,13 @@ body {
             margin-left: 40px;
             font-size: 35px;
             color: black;
-            font: "Arboria";
+            font-family: Arboria, sans-serif;
         }
 
         .sidebar c {
             display: block;
             font-size: 18px;
+            font-family: Arboria, sans-serif;
             margin-left: 40px;
             margin-top: 10px;
             margin-bottom: 40px;
@@ -52,8 +52,8 @@ body {
 
         .assignment {
             font-size: 16px;
-            font-family: 'Arboria';
-            padding: 0px 20px 0px 20px;
+            font-family: Arboria, sans-serif;
+            padding: 0 20px 0 20px;
             width: 490px;
             height: 450px;
             overflow: hidden;
