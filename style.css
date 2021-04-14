@@ -76,10 +76,18 @@ body {
             /*border: 100px 100px 100px 100px solid deeppink;*/
         }
 
+        .assignment img {
+            width: 490px;
+            height: 320px;
+            object-fit: cover;
+        }
+
         div.content {
             margin-top: 40px;
             margin-left: 250px;
             margin-right: 150px;
+            margin-bottom: 150px;
+
         }
 
         @media screen and (max-width: 700px) {
