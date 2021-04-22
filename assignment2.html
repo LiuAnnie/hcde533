@@ -18,7 +18,7 @@
 
 <div class="content" style="padding-left: 20px">
     <h1 style="padding-top: 10px">Getting Started With 3D Printing</h1>
-    <img src="A2-Getting-Started-With-3D-Printing/images/cube.jpg" width=80% height="450px">
+    <img src="A2-Getting-Started-With-3D-Printing/images/cube.jpg" width="80%">
 
     <h2>The Goal</h2>
     <p style="width: 80%">
@@ -62,88 +62,65 @@
     <img src="A2-Getting-Started-With-3D-Printing/images/test_prints.jpg" width=80%>
     <p style="width: 80%">
         Finally, I was able to get started on some test prints! In the table below, I've documented the
-        test prints I did, along with the Cura settings applied, expected printing time, actual time
-        and dimensions, and their STL and G-Code files. Dimensions were measured with calipers.
+        test prints I did, along with the applied Cura settings, printing time,
+        and dimensions. Dimensions were measured with calipers.
     </p>
 <br>
-    <table style="width: 100%">
+    <table style="width: 80%; border-style: solid">
         <tr>
-            <th>Test Print</th>
+            <th style="width: 30%">Test Print</th>
             <th>Cura Settings</th>
-            <th>Expected Time and Resources</th>
-            <th>Actual Time and Dimensions</th>
-            <th>STL and Ender 3 G-Code</th>
+            <th>Printing Time and Dimensions</th>
         </tr>
         <tr>
-            <td>2cm Cube with Standard "Low Quality" Settings</td>
+            <td>2cm Cube</td>
             <td>Low Quality Setting</td>
-            <td>20 min, 4g, 1.36m</td>
             <td>23 min
                 <br>
                 H 19.94mm
                 <br>
                 W 20.11mm
             </td>
-            <td>cube_2cm.stl
-                <br>
-                cube_low.gcode
-            </td>
         </tr>
         <tr>
-            <td>2cm Cube with Standard "Standard Quality" Settings</td>
+            <td>2cm Cube</td>
             <td>Standard Quality Setting</td>
-            <td>26 min, 4g, 1.36m</td>
             <td>29 min
                 <br>
                 H 20.02mm
                 <br>
                 W 19.70mm
             </td>
-            <td>cube_2cm.stl
-                <br>
-                cube_standard.gcode
-            </td>
         </tr>
         <tr>
-            <td>2cm Cube with Standard "Super Quality" Settings</td>
+            <td>2cm Cube</td>
             <td>Super Quality Setting</td>
-            <td>49 min, 4g, 1.46m</td>
             <td>51 min
                 <br>
                 H 19.92mm
                 <br>
                 W 20.00mm
             </td>
-            <td>cube_2cm.stl
-                <br>
-                cube_high.gcode
-            </td>
         </tr>
         <tr>
-            <td>2cm Cube with Concentric Top and Bottom Layer and Your Favorite Print Setting</td>
+            <td>2cm Cube</td>
             <td>Standard Quality Setting
                 <br>
                 Concentric Top and Bottom Layer
             </td>
-            <td>25 min, 4g, 1.28m</td>
             <td>27 min
                 <br>
                 H 19.95mm
                 <br>
                 W 19.68mm
             </td>
-            <td>cube_2cm.stl
-                <br>
-                cube_concentric.gcode
-            </td>
         </tr>
         <tr>
-            <td>Tube 3cm in Diameter and 3cm High with Single Extrusion Wall Thickness</td>
+            <td>Tube 3cm in Diameter and 3cm High</td>
             <td>Standard Quality Setting
                 <br>
                 0.4mm Wall Thickness
             </td>
-            <td>25 min, 3g, 0.94m</td>
             <td>30 min
                 <br>
                 H 30.05mm
@@ -152,20 +129,15 @@
                 <br>
                 Inner Diameter 28.56mm
             </td>
-            <td>tube_single.stl
-                <br>
-                tube_single.gcode
-            </td>
         </tr>
         <tr>
-            <td>Tube 3cm in Diameter and 3cm High with Double Extrusion Wall Thickness and Random Z-Seam Alignment</td>
+            <td>Tube 3cm in Diameter and 3cm High</td>
             <td>Standard Quality Setting
                 <br>
                 0.8mm Wall Thickness
                 <br>
                 Random Z-Seam Alignment
             </td>
-            <td>28 min, 3g, 0.93m</td>
             <td>31 min
                 <br>
                 H 29.99mm
@@ -173,10 +145,6 @@
                 Outer Diameter 29.93mm
                 <br>
                 Inner Diameter 28.37mm
-            </td>
-            <td>tube_double.stl
-                <br>
-                tube_double.gcode
             </td>
         </tr>
         <tr>
@@ -187,16 +155,11 @@
                 <br>
                 15% Infill
             </td>
-            <td>35 min, 8g, 2.63m</td>
             <td>39 min
                 <br>
                 H 30.47mm
                 <br>
                 D 30.00mm
-            </td>
-            <td>cylinder_1tenthmm_tol.stl
-                <br>
-                cylinder_1tenthmm_tol.gcode
             </td>
         </tr>
         <tr>
@@ -207,27 +170,21 @@
                 <br>
                 15% Infill
             </td>
-            <td>36 min, 8g, 2.64m</td>
             <td>40 min
                 <br>
                 H 29.98mm
                 <br>
                 D 30.07mm
             </td>
-            <td>cylinder_1thousandthmm_tol.stl
-                <br>
-                cylinder_1thousandthmm_tol.gcode
-            </td>
         </tr>
         <tr>
-            <td>Cylinder 3cm in Diameter with Spiralize Outer Contour</td>
+            <td>Cylinder 3cm in Diameter</td>
             <td>Standard Quality Setting
                 <br>
                 15% Infill
                 <br>
                 Spiralize Outer Contour
             </td>
-            <td>28 min, 2g, 0.71m</td>
             <td>30 min
                 <br>
                 H 30.05mm
@@ -236,29 +193,20 @@
                 <br>
                 Wall Thickness 0.45mm
             </td>
-            <td>cylinder_1thousandthmm_tol.stl
-                <br>
-                cylinder_spiral.gcode
-            </td>
         </tr>
         <tr>
-            <td>Cylinder 3cm in Diameter Printed on Its Side with Supports On</td>
+            <td>Cylinder 3cm in Diameter</td>
             <td>Low Quality Setting
                 <br>
                 15% Infill
                 <br>
                 Supports Generated
             </td>
-            <td>50 min, 9g, 3.01m</td>
             <td>52 min
                 <br>
                 H 30.19mm
                 <br>
                 D 30.00mm
-            </td>
-            <td>cylinder_1thousandthmm_tol.stl
-                <br>
-                cylinder_supports.gcode
             </td>
         </tr>
         <tr>
@@ -269,7 +217,6 @@
                 <br>
                 0.4mm Wall Thickness
             </td>
-            <td>28 min, 3g, 1.02m</td>
             <td>29 min
                 <br>
                 H 20.03mm
@@ -278,15 +225,14 @@
                 <br>
                 Hole D 10.00mm
             </td>
-            <td>cube_hol.stl
-                <br>
-                cube_hole_2.gcode
-            </td>
         </tr>
     </table>
 <br>
     <p style="width: 80%">
         The final test print took me 2 tries to get to tolerance.
+    </p>
+    <p style="font-style: italic">
+        Access a more detailed table <a target="_blank" href="A2-Getting-Started-With-3D-Printing/HCDE%20522%20A2%20Table.pdf" style="color: deeppink">here.</a>
     </p>
     <p style="width: 80%; padding-top: 30px; font-size: 16pt">
         Download all STL and G-Code files on
