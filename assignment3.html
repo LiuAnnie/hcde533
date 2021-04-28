@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/upt8ghq.css">
+    <title>Grasshopper</title>
+</head>
+<body>
+
+<div class="sidebar">
+    <b>Annie Liu</b>
+    <c>Digital Fabrication</c>
+    <a class="active" href="index.html">projects</a>
+    <a href="about.html">about</a>
+</div>
+
+<div class="content" style="padding-left: 20px">
+    <h1 style="padding-top: 10px">Getting Started With Grasshopper</h1>
+    <img src="A3-Grasshopper/Images/top_angle2.jpg" width="80%">
+
+    <h2>The Goal</h2>
+    <p style="width: 80%">
+        Create Grasshopper definitions of clips to hold together cardboard and a Grasshopper definition
+        to create nested structures!
+    </p>
+    <h2>Designing the Clips</h2>
+    <p style="width: 80%">
+        Prior to working in Grasshopper, I first determined what I wanted my clips to look like! I
+        roughly sketched what I had in mind on a sticky note and added some approximate dimensions
+        for slot width and depth based on my cardboard's thickness. Using my caliper, the cardboard
+        was around 6mm, so I wanted the clip's slot width to be smaller than that. This way, the clip
+        would firmly attach to the cardboard. I wanted the assembled cardboard construction to look
+        like an open cube with an X-shaped internal structure. The pieces of cardboard would be held
+        together by circular clips with 8 slots placed at multiple angles.
+    </p>
+    <img src="A3-Grasshopper/Images/sketch.jpg" width="80%">
+
+    <h2>Making the Clips in Grasshopper</h2>
+    <p style="width: 80%">
+        To make my clips, I first created a circle. I then added a rectangle as the first slot. These
+        rectangles were multiplied using polar array. I moved shapes around with Move and Vector XYZ.
+        Since I wanted the rectangle to be aligned with the center of the circle, I applied division
+        to move the slot over by half of its width. When working with dimensions that I wanted to vary easily, like radius or slot width or slot depth, I connected these elements
+        with number sliders. With number sliders, I'm able to adjust the range so that it works the best
+        for my design. For example, I recognized that my slot widths could not be wider than 5.7mm, so that
+        was set as the maximum on my number slider. When my clip looked as intended, I grouped together
+        my elements and baked them. From Rhino, I used CurveBoolean to extract my final clip and extruded it
+        to a height of 6.5mm.
+    </p>
+    <img src="A3-Grasshopper/Images/clipGrasshopper.JPG" width="80%">
+    <h2>Making Corner Clips in Grasshopper</h2>
+    <p style="width: 80%">
+        After exporting the clip STL and slicing it in Cura, I recognized that it would take too long to print 10
+        of these clips (~8 hours). It would also be a waste of filament, given that only 3 out of the 8 slots are
+        utilized
+        for 8 out of the 10 clips (I ultimately printed 11 in total). Because of this, I decided to go back into
+        Grasshopper to modify the clip definition to make corner clips. I added a square to section off a portion of the
+        clip. After baking, I applied CurveBoolean to extract the corner piece I needed. I extruded the corner clip
+        to a height of 10mm. Then, I started printing!
+    </p>
+    <img src="A3-Grasshopper/Images/cornerclipGrasshopper.JPG" width="80%">
+    <h2>Printing the Clips and Assembly</h2>
+    <p style="width: 80%">
+        Turning 8 of the original clips into corner clips cut down the printing time in half. Printing 8 corner clips
+        and
+        1 full clip took around 4.5 hours. In total, I spent around 6.5 hours printing clips including 2 test prints. As
+        the clips were printing, I cut my cardboard. Assembly was slightly difficult since I had to squeeze cardboard
+        into
+        multiple slots at different angles at the same time, but once finished, the construction was super sturdy! I
+        threw
+        the construction at the ground (carpet and concrete) several times and often really aggressively, and it didn't
+        come apart!
+    </p>
+    <img src="A3-Grasshopper/Images/spread.jpg" width="80%">
+    <img src="A3-Grasshopper/Images/top_angle.jpg" width="80%">
+    <img src="A3-Grasshopper/Images/side_angle.jpg" width="80%">
+    <iframe width="80%" height="600px" src="https://www.youtube-nocookie.com/embed/1vMbMGIyXig"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    <h2>Nested Structures</h2>
+    <p style="width: 80%">
+        I wanted to create nested structures with octagons. In Grasshopper, I created a polygon component
+        and applied a number slider to adjust the radius and number of sides (n=8). I then applied multiple offsets
+        to the polygon before grouping all the lines together, baking it, and extruding the shapes in Rhino. I ended
+        up with 4 total octagon structures of all different sizes when printed. I'm hoping to use these structures as
+        a guide to draw perfect octagons on paper in the future.
+    </p>
+    <img src="A3-Grasshopper/Images/nestedGrasshopper.JPG" width="80%">
+    <img src="A3-Grasshopper/Images/nestedBed.jpg" width="80%">
+    <img src="A3-Grasshopper/Images/nested.jpg" width="80%">
+    <img src="A3-Grasshopper/Images/nestedSeparate.jpg" width="80%">
+
+    <p style="width: 80%; padding-top: 30px; font-size: 16pt">
+        Download all Rhino, Grasshopper, and STL files on
+        <a target="_blank" href="https://github.com/LiuAnnie/hcde533/tree/main/A3-Grasshopper"
+           style="color: deeppink">
+            GitHub.
+        </a>
+    </p>
+</div>
+
+
+</body>
+</html>
