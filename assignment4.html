@@ -32,8 +32,13 @@
         and a
         <a target="_blank" href="https://www.thingiverse.com/thing:2453990"
            style="color: deeppink">hat</a>
-        on Thingiverse! I put them into Rhino, used Edge Analysis
-        to find problems, and fixed naked edges with FillMeshHole! After both meshes were closed, I combined
+        on Thingiverse! I put them into Rhino, reduced the meshes with ReduceMesh, used Edge Analysis
+        to find problems, and fixed naked edges with FillMeshHole!
+    </p>
+    <img src="A4-Mesh/bunnyMesh.PNG" width="80%">
+    <img src="A4-Mesh/hatMesh.PNG" width="80%">
+    <p style="width: 80%">
+        After both meshes were closed, I combined
         the two meshes with MeshBooleanUnion. My STL (dogHat.STL) exported with no issues, and I ended up printing
         it! Turned out pretty cute. The original STL files for the bunny and dog can be found on my Github!
     </p>
@@ -42,14 +47,20 @@
 
     <h2>Starting My Lamp</h2>
     <p style="width: 80%">
-        For my lamp, I was interested in using dichroic film or mirror film. I sketched out my ideas in my sketchbook. My plan
-        is to line polycarbonate sheets mirror film and slide these into slots in a 3D printed lampshade frame. This frame will
-        then be attached to the inner component on the pendant light. After settling on an idea, I started working on the inner component to attach my lampshade to the light.
-        I needed to find a good fit first,
-        so I went through a lot of trial and error trying to determine a solid fit. Once a good fit is achieved, I'll modify
-        the Rhino model to accommodate the other parts of the lampshape that will attach to the inner component.
+        For my lamp, I was interested in using dichroic film or mirror film. I sketched out my ideas in my sketchbook.
+        After considering several different ideas, I decided to work on a lamp that incorporated one-way mirror film-lined
+        polycarbonate sheets. I'll model and 3D print a frame with four slots that the polycarbonate sheets can slide into.
+        This frame would attach to the light. When the lamp is off, it acts as a mirror. When the lamp is on, the viewer
+        can see into the lamp which would display an infinity illusion effect.
     </p>
-    <img src="A4-Lamp/sketch.jpg" width="80%">
+        <img src="A4-Lamp/sketch.jpg" width="80%">
+    <p style="width: 80%">
+        After settling on an idea, I started working on the inner component to attach my lampshade to the light.
+        I needed to find a good fit first, so I went through a lot of trial and error trying to determine a solid fit.
+        When modeling the various test pieces, I utilized Grasshopper to help me easily vary the size of the diameter that
+        the light components would fit through. My last test provided a good fit around the light, so my next steps are to modify
+        that test model to accommodate and attach to the other parts of the lampshade.
+    </p>
     <img src="A4-Lamp/grasshopper.PNG" width="80%">
     <img src="A4-Lamp/lampInner.PNG" width="80%">
     <img src="A4-Lamp/lampInnerTests.jpg" width="80%">
